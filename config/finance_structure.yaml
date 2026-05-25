@@ -1,0 +1,46 @@
+calendar:
+  start_fiscal_year: 2024
+  start_fiscal_period: 1
+  num_periods: 24
+
+  fiscal_year_label_prefix: "FY"
+  period_label_format: "{fy}-P{p:02d}"
+
+  close_policy:
+    open_last_n_periods: 2
+    soft_closed_prior_n_periods: 2
+
+dimensions:
+
+  cost_centers:
+    - { cost_center_id: "CC1001", cost_center_name: "Marketing Paid Media", department_name: "Marketing" }
+    - { cost_center_id: "CC1002", cost_center_name: "Marketing Brand", department_name: "Marketing" }
+    - { cost_center_id: "CC1003", cost_center_name: "Marketing Events", department_name: "Marketing" }
+
+    - { cost_center_id: "CC2001", cost_center_name: "Engineering Platform", department_name: "Engineering" }
+    - { cost_center_id: "CC2002", cost_center_name: "Engineering Product", department_name: "Engineering" }
+    - { cost_center_id: "CC2003", cost_center_name: "Engineering Infrastructure", department_name: "Engineering" }
+
+    - { cost_center_id: "CC3001", cost_center_name: "Finance G&A", department_name: "G&A" }
+    - { cost_center_id: "CC3002", cost_center_name: "HR Operations", department_name: "G&A" }
+    - { cost_center_id: "CC3003", cost_center_name: "Legal & Compliance", department_name: "G&A" }
+
+    - { cost_center_id: "CC4001", cost_center_name: "Sales North America", department_name: "Sales" }
+    - { cost_center_id: "CC4002", cost_center_name: "Sales EMEA", department_name: "Sales" }
+    - { cost_center_id: "CC4003", cost_center_name: "Sales APAC", department_name: "Sales" }
+
+    - { cost_center_id: "CC5001", cost_center_name: "Customer Success", department_name: "Operations" }
+    - { cost_center_id: "CC5002", cost_center_name: "Support Operations", department_name: "Operations" }
+    - { cost_center_id: "CC5003", cost_center_name: "IT Operations", department_name: "Operations" }
+
+  gl_accounts:
+    - { gl_account_id: "6100", gl_account_name: "Paid Advertising", pnl_category: "Opex" }
+    - { gl_account_id: "6200", gl_account_name: "Cloud Infrastructure", pnl_category: "Opex" }
+    - { gl_account_id: "6300", gl_account_name: "Professional Services", pnl_category: "Opex" }
+    - { gl_account_id: "6400", gl_account_name: "Travel & Entertainment", pnl_category: "Opex" }
+    - { gl_account_id: "6500", gl_account_name: "Software Licenses", pnl_category: "Opex" }
+    - { gl_account_id: "6600", gl_account_name: "Contractors", pnl_category: "Opex" }
+    - { gl_account_id: "6700", gl_account_name: "Employee Benefits", pnl_category: "Opex" }
+    - { gl_account_id: "6800", gl_account_name: "Training & Development", pnl_category: "Opex" }
+    - { gl_account_id: "6900", gl_account_name: "Office Expenses", pnl_category: "Opex" }
+    - { gl_account_id: "7000", gl_account_name: "Data & Analytics Tools", pnl_category: "Opex" }

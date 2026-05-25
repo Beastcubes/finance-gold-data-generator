@@ -1,0 +1,3 @@
+materiality:
+  dollar_threshold: 50000
+  pct_threshold: 0.08
